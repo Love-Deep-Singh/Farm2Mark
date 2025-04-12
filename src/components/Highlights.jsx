@@ -109,7 +109,7 @@ export default function Highlights() {
       backgroundColor:" #Ffffff"   ,
       boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)', // Custom shadow color
       '&:hover': {
-        boxShadow: '0px 8px 12px rgba(0, 0, 0, 0.2)', // Custom shadow color on hover
+        boxShadow: '0px 8px 12px rgba(67, 157, 12, 0.2)', // Custom shadow color on hover
       },
       transition: 'box-shadow 0.3s ease-in-out', 
       }}

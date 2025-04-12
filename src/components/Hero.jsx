@@ -52,7 +52,9 @@ const AnimatedGradientBox = styled(Box)(({ theme }) => ({
   width: '99vw',
   minHeight: '60vh',
   overflow: 'hidden',
-  backgroundColor: 'white', // base
+    ...theme.applyStyles('dark', {
+    background: 'primary.main',
+  }), // base
 }));
 const GradientLayer = styled('div')({
   position: 'absolute',
@@ -101,7 +103,6 @@ React.useEffect(()=>{
 
     <AnimatedGradientBox
       id="hero"
-      className='.mode-light'
 
     >
       <ToastContainer
@@ -140,7 +141,7 @@ transition={Bounce}
               flexDirection: { xs: 'column', sm: 'row' },
               alignItems: 'center',
               fontSize: 'clamp(3rem, 10vw, 3.5rem)',
-              color:'black',
+              color:'white',
               zIndex:1
             }}
           >
@@ -154,7 +155,7 @@ transition={Bounce}
 
                 color: 'primary.main',
                 ...theme.applyStyles('dark', {
-                  color: 'primary.light',
+                  color: 'primary.main',
                 }),
               })}
             >
